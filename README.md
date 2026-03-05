@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Fullstack Social App
 
-## Getting Started
+A modern, full-stack social media web application built with Next.js, Prisma, PostgreSQL, Clerk Authentication, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **🔐 Secure Authentication:** Powered by [Clerk](https://clerk.dev/) for robust identity management.
+- **📝 Create & Share Posts:** Users can share their thoughts and upload images.
+- **💬 Interactive Comments:** Engage with others by commenting on posts.
+- **❤️ Like System:** Like and unlike posts seamlessly.
+- **👥 User Connections:** Follow and unfollow other users to see their content.
+- **🔔 Notification System:** Stay updated when someone likes your post, comments, or follows you.
+- **🎨 Modern UI:** Beautiful and fully responsive design utilizing [Tailwind CSS](https://tailwindcss.com/) and [Radix UI](https://www.radix-ui.com/).
+- **🌗 Dark/Light Mode:** Full support for theming via `next-themes`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js 14](https://nextjs.org/) (App Router & Server Actions)
+- **Frontend library:** [React 18](https://reactjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/), `clsx`, `tailwind-merge`
+- **UI Components:** [Radix UI](https://www.radix-ui.com/), [Lucide React](https://lucide.dev/) (Icons)
+- **Database ORM:** [Prisma](https://www.prisma.io/)
+- **Database:** PostgreSQL
+- **Authentication:** [Clerk](https://clerk.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Getting Started
 
-## Learn More
+Follow these instructions to set up the project locally on your machine.
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Node.js (v18 or higher recommended)
+- PostgreSQL database (e.g., Supabase, Neon, or local PostgreSQL instance)
+- A Clerk account
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd my-fullstack-social
