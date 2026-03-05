@@ -39,3 +39,53 @@ Follow these instructions to set up the project locally on your machine.
    ```bash
    git clone <repository-url>
    cd my-fullstack-social
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory and add the required keys:
+   ```env
+   # PostgreSQL Database URL
+   DATABASE_URL="postgresql://user:password@host:port/database?schema=public"
+
+   # Clerk Auth Keys
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+   CLERK_SECRET_KEY=sk_test_...
+
+   # Optional: Clerk URL Redirects (if needed)
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   ```
+
+4. **Initialize Database:**
+   Generate the Prisma Client and push the schema to your database:
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+5. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the app running.
+
+## 🗄️ Database Schema Overview
+
+The database uses Prisma and consists of the following core models:
+- **`User`**: Profiles and Clerk authentication mapping.
+- **`Post`**: User-generated content with optional images.
+- **`Comment`**: Responses to specific posts.
+- **`Like`**: Tracks the posts a user has liked.
+- **`Follows`**: A self-relation managing the followers/following system.
+- **`Notification`**: Activity alerts (`LIKE`, `COMMENT`, `FOLLOW`).
+
+## 📜 License
+
+This project is licensed under the MIT License.
